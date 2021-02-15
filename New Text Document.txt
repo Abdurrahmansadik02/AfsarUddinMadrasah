@@ -1,0 +1,241 @@
+1
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+2
+
+<!DOCTYPE html>
+
+3
+
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+4
+
+<head>
+
+5
+
+?
+
+6
+
+<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'/>
+
+7
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'/>
+
+8
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+
+9
+
+<link href='https://cdn.rawgit.com/msdesign92/ms-design/master/p-animate.css' rel='stylesheet'/>
+
+10
+
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet'/>
+
+11
+
+?
+
+12
+
+<!-- Meta Tag SEO -->
+
+13
+
+<meta charset='utf-8'/>
+
+14
+
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+
+15
+
+<meta content='blogger' name='generator'/>
+
+16
+
+<link expr:href='data:blog.url' rel='canonical'/>
+
+17
+
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+
+18
+
+<title><data:blog.pageTitle/></title>
+
+19
+
+<b:else/>
+
+20
+
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+
+21
+
+<title><data:blog.pageName/> - <data:blog.title/></title>
+
+22
+
+</b:if></b:if>
+
+23
+
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+
+24
+
+<title>Page Not Found - <data:blog.title/></title>
+
+25
+
+</b:if>
+
+26
+
+<meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/>
+
+27
+
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+
+28
+
+<meta expr:content='data:blog.metaDescription' name='description'/>
+
+29
+
+<b:if cond='data:blog.homepageUrl != data:blog.url'>
+
+30
+
+</b:if></b:if>
+
+31
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+
+32
+
+<b:if cond='data:blog.postImageThumbnailUrl'>
+
+33
+
+<link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
+
+34
+
+</b:if></b:if>
+
+35
+
+<b:if cond='data:blog.url == data:blog.homepageUrl'> 
+
+36
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'> 
+
+37
+
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>  
+
+38
+
+<b:if cond='data:blog.url'>
+
+39
+
+<meta expr:content='data:blog.url' property='og:url'/>
+
+40
+
+</b:if>
+
+41
+
+<meta expr:content='data:blog.title' property='og:site_name'/>
+
+42
+
+<b:if cond='data:blog.pageName'>
+
+43
+
+<meta expr:content='data:blog.pageName' property='og:title'/>
+
+44
+
+</b:if>
+
+45
+
+<meta content='website' property='og:type'/></b:if></b:if></b:if>
+
+46
+
+<b:if cond='data:blog.postImageUrl'>
+
+47
+
+<meta expr:content='&quot;&quot; + data:blog.postImageUrl' property='og:image'/>
+
+48
+
+</b:if>
+
+49
+
+?
+
+50
+
+<b:skin><![CDATA[
+
+51
+
+/*
+
+52
+
+Theme Name        : Palki Ultimate
+
+53
+
+Theme Designer    : Muhammad Subel
+
+54
+
+Designer URL      : http:www.msdesignbd.com
+
+55
+
+*/
+
+56
+
+?
+
+57
+
+/* Variable definitions
+
+58
+
+   ====================
+
+59
+
+<Variable name="keycolor" description="Main Color" type="color" default="#36A3C9" value="#36A3C9"/>
+
+60
+
+<Group description="links color" selector="body">
+
+Template: Edit Template
